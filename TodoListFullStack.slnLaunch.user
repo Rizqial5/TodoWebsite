@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "TodoListFullStack.Server\\TodoListFullStack.Server.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "todolistfullstack.client\\todolistfullstack.client.esproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import Button from '@mui/material/Button';
 
 function App() {
     const [forecasts, setForecasts] = useState();
@@ -34,13 +35,15 @@ function App() {
     return (
         <div>
             <h1 id="tableLabel">Weather forecast</h1>
+            <Button variant="contained"> Hello World</Button>
+
             <p>This component demonstrates fetching data from the server.</p>
             {contents}
         </div>
     );
     
     async function populateWeatherData() {
-        const response = await fetch('weatherforecast');
+        const response = await fetch('/weatherforecast');
         if (response.ok) {
             const data = await response.json();
             setForecasts(data);
